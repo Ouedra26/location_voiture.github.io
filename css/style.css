@@ -1,0 +1,143 @@
+/* STYLE GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin: auto;
+    width: 100% !important;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.composant {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+header .composant img {
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+
+/* HEADER */
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 100px !important;
+    width: 100% !important;
+}
+
+
+/* TITRE */
+
+.titre {
+    position: absolute;
+    top: 20% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-color: rgba(0, 0, 0, 0.247) !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* BOUTTONS */
+
+#nav-gauche {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#nav-droit {
+    display: none;
+    position: absolute;
+    right: -26px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* NAVBAR */
+
+.b1 {
+    text-align: left;
+    margin-left: 1260px;
+}
+
+
+/* FORMULAIRE DU HEADER */
+
+header .formulaire {
+    bottom: 5px;
+}
+
+.valider {
+    background-color: rgba(0, 128, 0, 0.781);
+}
+
+
+/* Mediaquery */
+
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 760px) {
+    header .composant img {
+        height: 79vh !important;
+    }
+    /* HEADER */
+    nav {
+        display: none !important;
+        right: 566px !important;
+    }
+    /* TITRE */
+    .titre {
+        left: 43% !important;
+        padding: 0px !important;
+    }
+    /* NAVBAR */
+    /* FORMULAIRE DU HEADER */
+    header .formulaire {
+        bottom: 5px;
+    }
+    .valider {
+        background-color: rgba(0, 128, 0, 0.781);
+    }
+    .b1 {
+        margin-left: 100px !important;
+    }
+    /* FOOTER */
+    footer .adresse {
+        padding-left: 32px !important;
+    }
+}
+
+
+/* TABLETTE */
+
+@media screen and (max-width: 990px) {
+    .b1 {
+        margin-left: 890px !important;
+    }
+}
